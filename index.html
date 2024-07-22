@@ -875,6 +875,14 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+  <script>
+  document.querySelector('.scroll-indicator').addEventListener('click', function() {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  });
+</script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
