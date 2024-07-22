@@ -25,6 +25,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -59,27 +60,64 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
-
-      <img src="assets/img/01.jpg" alt="">
-
-      <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <h2>Bienvenue dans mon univers décalé</h2>
-            <p>je suis <span class="typed" data-typed-items="un Maître des Chutes, un Collectionneur de Sandwichs, un Expert en Distractions, un Savant Fou des Blagues, un Champion des Conversations Bizarres">un Maître des Chutes</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-            <div class="social-links">
-              
-              <a href="https://www.instagram.com/lougoumakev/"><i class="bi bi-instagram"></i></a>
-            
-            </div>
-          </div>
+   
+<!-- Hero Section -->
+<section id="hero" class="hero section light-background">
+  <img src="assets/img/01.jpg" alt="">
+  <div class="container" data-aos="zoom-out">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <h2>Bienvenue dans mon univers décalé</h2>
+        <p>Je suis <span class="typed" data-typed-items="un Maître des Chutes, un Collectionneur de Sandwichs, un Expert en Distractions, un Savant Fou des Blagues, un Champion des Conversations Bizarres">un Maître des Chutes</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/lougoumakev/"><i class="bi bi-instagram"></i></a>
         </div>
       </div>
+    </div>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <i class="bi bi-arrow-down-short"></i>
+      <p>Faites défiler vers le bas</p>
+    </div>
+  </div>
 
-    </section><!-- /Hero Section -->
+</section>
 
+
+<style>
+/* Style for the scroll indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: -70px; /* Increased value to move it further down */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.scroll-indicator i {
+  font-size: 24px;
+  animation: bounce 1s infinite;
+}
+
+.scroll-indicator p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+</style>
     <!-- À propos de moi -->
     <section id="about" class="about section">
 
